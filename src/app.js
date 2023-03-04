@@ -1,1 +1,2 @@
-/* קובץ דגבה מרכזי*/
+import "./routes/links.js";
+
