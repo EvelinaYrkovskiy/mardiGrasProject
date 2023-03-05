@@ -1,5 +1,5 @@
-/* main js functions */
-import PAGES from "./pageModel.js";
+
+import PAGES from "./src/routes/pageModel.js";
 import {
   HOME_PAGE,
   ABOUT_PAGE,
@@ -7,7 +7,7 @@ import {
   FAQ_PAGE,
   CONTACT_PAGE,
   ERROR404_PAGE,
-} from "../services/domService.js";
+} from "./src/services/domService.js";
 
 export const onChangePage = page => {
   HOME_PAGE.className = "d-none";

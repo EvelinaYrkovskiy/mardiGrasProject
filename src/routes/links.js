@@ -1,4 +1,4 @@
-import PAGES from "./pageModel.js";
+import PAGES from "./sec/routes/pageModel.js";
 import {
   HOME_PAGE_LINK,
   ABOUT_PAGE_LINK,
@@ -6,16 +6,14 @@ import {
   FAQ_PAGE_LINK,
   CONTACT_PAGE_LINK,
   RETURN_TO_HOME_PAGE_LINK,
-} from "../services/domService.js";
-import { onChangePage } from "./router.js";
+} from "./src/services/domService.js";
+import { onChangePage } from "./src/routes/router.js";
 /********* האזנה לאירועים **********/
 
 // ניתוב דפים
 HOME_PAGE_LINK.addEventListener("click", () => onChangePage(PAGES.HOME));
 ABOUT_PAGE_LINK.addEventListener("click", () => onChangePage(PAGES.ABOUT));
-MEDIA_PAGE_LINK.addEventListener("click", () =>
-  onChangePage(PAGES.MEDIA)
-);
+MEDIA_PAGE_LINK.addEventListener("click", () => onChangePage(PAGES.MEDIA));
 FAQ_PAGE_LINK.addEventListener("click", () => onChangePage(PAGES.FAQ));
 CONTACT_PAGE_LINK.addEventListener("click", () => onChangePage(PAGES.CONTACT));
 RETURN_TO_HOME_PAGE_LINK.addEventListener("click", () =>
