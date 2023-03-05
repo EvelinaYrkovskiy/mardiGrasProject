@@ -1,4 +1,4 @@
-import PAGES from "./sec/routes/pageModel.js";
+import PAGES from "./pageModel.js";
 import {
   HOME_PAGE_LINK,
   ABOUT_PAGE_LINK,
@@ -6,8 +6,8 @@ import {
   FAQ_PAGE_LINK,
   CONTACT_PAGE_LINK,
   RETURN_TO_HOME_PAGE_LINK,
-} from "./src/services/domService.js";
-import { onChangePage } from "./src/routes/router.js";
+} from "../services/domService.js";
+import { onChangePage } from "./router.js";
 /********* האזנה לאירועים **********/
 
 // ניתוב דפים
